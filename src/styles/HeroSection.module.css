@@ -1,0 +1,17 @@
+.linearAnimation {
+  animation-name: linearAnim;
+  animation-duration: 2s; /* Change to 1000s later if needed */
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /* Moves back and forth */
+}
+
+@keyframes linearAnim {
+  0% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
