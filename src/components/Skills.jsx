@@ -16,13 +16,13 @@ const Skills = () => {
     <Element name="skills">
       <section className="bg-hero-gradient flex flex-col gap-y-10 md:gap-y-18 items-center p-10 md:p-20">
         <h4
-          className="font-roboto text-xl md:text-3xl font-bold uppercase text-primary-900 dark:text-dark-text-primary"
+          className="font-roboto text-xl sm:text-2xl md:text-3xl font-bold uppercase text-primary-900 dark:text-dark-text-primary"
           data-aos="fade-up"
         >
           Skills
         </h4>
         <div className="container flex flex-col md:grid md:grid-cols-1 w-full md:items-center gap-10">
-          <div className="left flex flex-col md:grid md:grid-cols-3 gap-y-10 gap-x-10 justify-center w-full">
+          <div className="left flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-10 justify-center w-full">
             {/* HTML */}
             <div
               className="skill bg-card-gradient p-4 rounded-xl border border-border dark:border-dark-border shadow-lg backdrop-blur-sm flex flex-col gap-y-3 md:gap-y-4"

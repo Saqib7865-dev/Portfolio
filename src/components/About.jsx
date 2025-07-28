@@ -13,18 +13,18 @@ const About = () => {
 
   return (
     <Element name="about">
-      <section className="bg-hero-gradient flex flex-col gap-y-10 md:gap-y-18 items-center px-4 py-12 md:p-20 scroll-smooth">
+      <section className="bg-hero-gradient flex flex-col gap-y-10 md:gap-y-18 items-center px-4 py-12 lg:p-20 scroll-smooth">
         <h4
-          className="font-roboto text-xl md:text-3xl font-bold uppercase text-primary-900 dark:text-dark-text-primary"
+          className="font-roboto text-xl sm:text-2xl md:text-3xl font-bold uppercase text-primary-900 dark:text-dark-text-primary"
           data-aos="fade-up"
         >
           About Me
         </h4>
         <div className="container flex flex-col w-full items-center gap-y-10 md:gap-y-12">
-          <div className="section-1 flex flex-col gap-y-10 md:gap-y-0 md:flex-row gap-x-10 items-center justify-center w-full md:max-w-full">
+          <div className="section-1 flex flex-col gap-y-10 lg:gap-y-0 lg:flex-row gap-x-10 items-center justify-center w-full md:max-w-full">
             <div className="textPart bg-card-gradient p-6 md:p-8 rounded-xl border border-border dark:border-dark-border shadow-lg backdrop-blur-sm">
               <p
-                className="font-roboto text-justify w-full md:max-w-10/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
+                className="font-roboto text-justify w-full md:max-w-11/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
                 data-aos="fade-right"
               >
                 My name is{" "}
@@ -44,7 +44,7 @@ const About = () => {
               </p>
               <br />
               <p
-                className="font-roboto text-justify w-full md:max-w-10/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
+                className="font-roboto text-justify w-full md:max-w-11/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
                 data-aos="fade-right"
               >
                 Over time, I developed a strong foundation in frontend
@@ -74,9 +74,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="section-2 flex flex-col gap-y-10 md:gap-x-10 md:gap-y-0 md:flex-row items-center justify-center w-full md:max-w-full">
+          <div className="section-2 flex flex-col gap-y-10 lg:gap-x-10 lg:gap-y-0 lg:flex-row items-center justify-center w-full md:max-w-full">
             <div className="img">
-              <div className="relative">
+              <div className="relative hidden lg:inline-block">
                 <div className="absolute inset-0 bg-border-gradient rounded-lg blur-sm opacity-75"></div>
                 <img
                   src={aboutImg}
@@ -89,7 +89,7 @@ const About = () => {
             <div className="textPart md:flex md:flex-col md:items-end">
               <div className="bg-card-gradient p-6 md:p-8 rounded-xl border border-border dark:border-dark-border shadow-lg backdrop-blur-sm">
                 <p
-                  className="font-roboto text-justify w-full md:max-w-10/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
+                  className="font-roboto text-justify w-full md:max-w-11/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
                   data-aos="fade-right"
                 >
                   With a solid grasp of{" "}
@@ -111,7 +111,7 @@ const About = () => {
                 </p>
                 <br />
                 <p
-                  className="font-roboto text-justify w-full md:max-w-10/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
+                  className="font-roboto text-justify w-full md:max-w-11/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
                   data-aos="fade-right"
                 >
                   To formalize and deepen my expertise, I earned{" "}
@@ -140,7 +140,7 @@ const About = () => {
                 </p>
                 <br />
                 <p
-                  className="font-roboto text-justify w-full md:max-w-10/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
+                  className="font-roboto text-justify w-full md:max-w-11/12 text-text-primary dark:text-dark-text-secondary leading-relaxed"
                   data-aos="fade-right"
                 >
                   Today, I continue to refine my skills in modern frontend

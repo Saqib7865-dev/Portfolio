@@ -14,7 +14,7 @@ const Projects = () => {
 
   return (
     <Element name="projects">
-      <section className="bg-hero-gradient flex flex-col gap-y-10 py-6 px-3 overflow-x-hidden md:pt-16 md:px-20 md:pb-10">
+      <section className="bg-hero-gradient flex flex-col gap-y-10 py-6 px-3 overflow-x-hidden md:pt-16 lg:px-20 md:pb-10">
         <div className="flex flex-col gap-y-18 items-center">
           <h4
             className="font-roboto text-xl md:text-3xl font-bold uppercase text-primary-900 dark:text-dark-text-primary"
@@ -39,12 +39,12 @@ const Projects = () => {
                     />
                   </div>
                   <div className="body py-6 px-4 flex flex-col gap-y-3">
-                    <h4 className="text-xl uppercase font-bold font-roboto text-text-primary dark:text-dark-text-primary group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
+                    <h4 className="text-xl uppercase font-bold font-roboto text-text-primary dark:text-dark-text-primary group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300 sm:min-h-24">
                       {project.title}
                     </h4>
-                    <p className="font-semibold font-roboto text-text-secondary dark:text-dark-text-secondary">
+                    <p className="font-semibold font-roboto text-text-secondary dark:text-dark-text-secondary sm:min-h-24">
                       Tech Stack:{" "}
-                      <span className="grid grid-cols-2 gap-4 xl:flex xl:flex-row flex-wrap xl:items-center xl:gap-x-2 mt-2">
+                      <span className="gap-1 flex xl:flex-row flex-wrap xl:items-center xl:gap-x-2 mt-2">
                         {project.stack.map((st, stid) => (
                           <span
                             key={stid}
