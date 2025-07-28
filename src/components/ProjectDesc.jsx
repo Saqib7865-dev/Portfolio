@@ -35,7 +35,8 @@ const ProjectDesc = () => {
         {selectedProject?.title}
       </h2>
 
-      <div className="proj-desc-section py-10 md:py-20">
+      {/* md:py-20 */}
+      <div className="proj-desc-section py-10 md:pt-20">
         <img
           src={selectedProject?.main_img}
           alt="Project Image"
@@ -101,10 +102,10 @@ const ProjectDesc = () => {
             <span className="text-lg md:text-xl font-roboto font-semibold text-text-primary dark:text-dark-text-primary inline-block mb-3">
               Github:{" "}
               <a
-                href="https://github.com/Saqib7865-dev"
+                href={selectedProject?.github}
                 target="_blank"
                 className="text-base text-blue-500 pl-5 uppercase"
-                title="https://github.com/Saqib7865-dev"
+                title={selectedProject?.github}
               >
                 Visit Repository
               </a>
@@ -114,7 +115,7 @@ const ProjectDesc = () => {
       </div>
 
       <div
-        className="reviews-section bg-background dark:bg-dark-background p-5 md:p-10 rounded-lg shadow-lg border border-border dark:border-dark-border"
+        className="hidden reviews-section bg-background dark:bg-dark-background p-5 md:p-10 rounded-lg shadow-lg border border-border dark:border-dark-border"
         data-aos="fade-up"
       >
         <h4 className="font-semibold text-base md:text-xl font-roboto border-b border-border dark:border-dark-border pb-3 mb-6 text-text-primary dark:text-dark-text-primary">

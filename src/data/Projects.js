@@ -27,6 +27,7 @@ export default [
       },
     ],
     category: "Landing_Page",
+    github: "https://github.com/Saqib7865-dev/Landing-Pages",
   },
   {
     id: 2,
@@ -57,6 +58,7 @@ export default [
       },
     ],
     category: "Landing_Page",
+    github: "https://github.com/Saqib7865-dev/Landing-Pages",
   },
   {
     id: 3,
@@ -87,6 +89,7 @@ export default [
       },
     ],
     category: "Landing_Page",
+    github: "https://github.com/Saqib7865-dev/Landing-Pages",
   },
   {
     id: 4,
@@ -116,6 +119,7 @@ export default [
       },
     ],
     category: "frontend",
+    github: "https://github.com/Saqib7865-dev/Crypto-Tracker-Dashboard",
   },
   {
     id: 5,
@@ -159,5 +163,6 @@ export default [
       },
     ],
     category: "mern",
+    github: "https://github.com/Saqib7865-dev/Blog-website-at-shellshift",
   },
 ];

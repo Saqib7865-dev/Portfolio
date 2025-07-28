@@ -294,7 +294,7 @@ const Projects = () => {
           <Link to="/all-projects" data-aos="fade-left">
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-btn-primary-gradient rounded-lg blur-sm opacity-0 hover:opacity-75 transition-opacity duration-300"></div>
-              <button className="relative border-2 border-border dark:border-dark-border bg-card-gradient hover:bg-btn-primary-gradient px-6 py-3 rounded-lg shadow-lg hover:shadow-xl active:shadow-md hover:border-primary-500 hover:text-white active:text-white text-text-secondary dark:text-dark-text-secondary hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out font-roboto cursor-pointer text-xs md:text-base font-semibold uppercase tracking-wide backdrop-blur-sm">
+              <button className="relative border-2 border-border dark:border-dark-border bg-card-gradient hover:bg-btn-primary-gradient px-6 py-3 rounded-lg shadow-lg hover:shadow-xl active:shadow-md hover:border-primary-500 dar:hover:text-white active:text-white text-text-secondary dark:text-dark-text-secondary hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out font-roboto cursor-pointer text-xs md:text-base font-semibold uppercase tracking-wide backdrop-blur-sm">
                 See All Projects
               </button>
             </div>
