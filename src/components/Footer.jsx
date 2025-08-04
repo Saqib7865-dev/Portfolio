@@ -6,7 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-surface dark:bg-dark-surface flex flex-col gap-y-10 md:gap-y-18 items-center pt-14 pb-7 px-6 md:px-20 border-t border-border-light dark:border-dark-border">
-      <div className="container grid md:grid-cols-3 gap-y-10 md:items-center md:w-4/5">
+      <div className="container grid grid-cols-2 md:grid-cols-3 gap-y-10 md:items-center md:w-4/5">
         <div className="flex flex-col h-full gap-y-3">
           <h4 className="font-roboto font-semibold text-text-primary dark:text-dark-text-primary text-lg">
             Pages

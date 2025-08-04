@@ -174,7 +174,7 @@ const ProjectDesc = () => {
         data-aos="fade-up"
         onClick={() => window.history.back()}
       >
-        ← Back
+        <span className="text-sm md:text-base">←</span> Back
       </button>
     </div>
   );

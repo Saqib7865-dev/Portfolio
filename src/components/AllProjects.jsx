@@ -321,7 +321,7 @@ const AllProjects = () => {
                             </h4>
                             <p className="font-semibold font-roboto text-text-secondary dark:text-dark-text-secondary">
                               Tech Stack:{" "}
-                              <span className="grid grid-cols-1 gap-4 xl:flex xl:flex-row flex-wrap xl:items-center xl:gap-x-2 mt-2">
+                              <span className="grid grid-cols-2 gap-4 xl:flex xl:flex-row flex-wrap xl:items-center xl:gap-x-2 mt-2">
                                 {project.stack.map((st, stid) => (
                                   <span
                                     key={stid}

@@ -122,11 +122,19 @@ const Header = () => {
       </div>
 
       {/* Small devices */}
-      <div
-        className="hamburger inline-block md:hidden"
-        onClick={() => setShowNavbar(true)}
-      >
-        <RxHamburgerMenu className="text-text-primary dark:text-dark-text-primary text-xl" />
+      <div className="flex items-center justify-center space-x-4">
+        <div
+          className="hamburger inline-block md:hidden"
+          onClick={() => setShowNavbar(true)}
+        >
+          <RxHamburgerMenu className="text-text-primary dark:text-dark-text-primary text-xl" />
+        </div>
+        <div id="theme" className="inline-block">
+          <WiMoonAltWaxingCrescent6
+            className="text-2xl cursor-pointer text-text-primary dark:text-dark-text-primary dark:hover:filter dark:hover:drop-shadow-[0_0_8px_#eab308] transition-all duration-700 ease-in-out"
+            onClick={handleThemeToggle}
+          />
+        </div>
       </div>
 
       <div
