@@ -36,20 +36,20 @@ const AllProjects = () => {
   };
 
   return (
-    <div className="p-10 md:p-20 bg-hero-gradient min-h-11/12">
+    <div className="p-5 sm:p-10 md:p-20 bg-hero-gradient min-h-11/12">
       <h2
         className="font-roboto font-semibold text-3xl uppercase text-center text-primary-900 dark:text-dark-text-primary mb-4"
         data-aos="fade-up"
       >
         All Projects
       </h2>
-      <div className="py-10">
-        <form className="bg-background dark:bg-dark-surface p-1 md:py-3 md:px-4 w-full font-roboto border border-border dark:border-dark-border text-text-primary dark:text-dark-text-primary shadow-lg rounded-lg hover:shadow-xl flex justify-between items-center gap-x-4">
+      <div className="py-5 md:py-10">
+        <form className="md:bg-background dark:bg-dark-surface p-1 md:py-3 md:px-4 w-full font-roboto md:border md:border-border dark:border-dark-border text-text-primary dark:text-dark-text-primary md:shadow-lg rounded-lg hover:shadow-xl flex justify-between items-center gap-2 gap-x-4 flex-col md:flex-row">
           <select
             onChange={(e) => setSelectedValue(e.target.value)}
             name="category"
             id="category"
-            className="bg-background dark:bg-dark-surface p-1 md:py-3 md:px-4 w-full font-roboto outline-none border border-border dark:border-dark-border text-text-primary dark:text-dark-text-primary placeholder:text-text-muted dark:placeholder:text-dark-text-muted shadow-lg rounded-lg transition-all duration-300 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-2 focus:ring-primary-100 dark:focus:ring-primary-900/30 hover:shadow-xl appearance-none"
+            className="bg-background dark:bg-dark-surface p-2 md:py-3 md:px-4 w-full font-roboto outline-none border border-border dark:border-dark-border text-text-primary dark:text-dark-text-primary placeholder:text-text-muted dark:placeholder:text-dark-text-muted shadow-lg rounded-lg transition-all duration-300 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-2 focus:ring-primary-100 dark:focus:ring-primary-900/30 hover:shadow-xl appearance-none"
           >
             <option
               value=""
@@ -90,7 +90,7 @@ const AllProjects = () => {
             required
             value={searchedProject}
             id="fullname"
-            className="bg-background dark:bg-dark-surface p-1 md:py-3 md:px-4 w-full font-roboto outline-none border border-border dark:border-dark-border text-text-primary dark:text-dark-text-primary placeholder:text-text-muted dark:placeholder:text-dark-text-muted shadow-lg rounded-lg transition-all duration-300 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-2 focus:ring-primary-100 dark:focus:ring-primary-900/30 hover:shadow-xl"
+            className="bg-background dark:bg-dark-surface p-2 md:py-3 md:px-4 w-full font-roboto outline-none border border-border dark:border-dark-border text-text-primary dark:text-dark-text-primary placeholder:text-text-muted dark:placeholder:text-dark-text-muted shadow-lg rounded-lg transition-all duration-300 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-2 focus:ring-primary-100 dark:focus:ring-primary-900/30 hover:shadow-xl"
             placeholder="Search Project"
             tabIndex={0}
             autoComplete="off"
@@ -102,7 +102,7 @@ const AllProjects = () => {
 
         {(selectedValue === "" || selectedValue === "Landing_Page") &&
           checkValidity("Landing_Page") && (
-            <div className="landingpages py-14">
+            <div className="landingpages py-5 md:py-14">
               <h3 className="py-5 text-text-primary dark:text-dark-text-primary relative w-full z-10 font-bold text-lg after:content-[''] after:w-full after:h-px after:bg-dark-surface-alt after:absolute after:left-0 after:right-0 after:bottom-2 after:shadow">
                 Landing Pages
               </h3>
