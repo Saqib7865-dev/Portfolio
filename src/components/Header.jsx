@@ -124,12 +124,12 @@ const Header = () => {
       {/* Small devices */}
       <div className="flex items-center justify-center space-x-4">
         <div
-          className="hamburger inline-block md:hidden"
+          className="hamburger md:hidden"
           onClick={() => setShowNavbar(true)}
         >
-          <RxHamburgerMenu className="text-text-primary dark:text-dark-text-primary text-xl" />
+          <RxHamburgerMenu className="text-text-primary dark:text-dark-text-primary text-xl cursor-pointer" />
         </div>
-        <div id="theme" className="inline-block">
+        <div id="theme" className="inline-block md:hidden">
           <WiMoonAltWaxingCrescent6
             className="text-2xl cursor-pointer text-text-primary dark:text-dark-text-primary dark:hover:filter dark:hover:drop-shadow-[0_0_8px_#eab308] transition-all duration-700 ease-in-out"
             onClick={handleThemeToggle}
@@ -142,7 +142,7 @@ const Header = () => {
           showNavbar ? "right-0" : "-right-[58rem]"
         }`}
       >
-        <div className="topbar text-text-primary dark:text-dark-text-primary font-roboto text-end">
+        <div className="topbar text-text-primary dark:text-dark-text-primary font-roboto text-end cursor-pointer">
           <span onClick={() => setShowNavbar(false)}>X</span>
         </div>
         <ul className="navlinks h-full flex flex-col gap-y-6 items-center justify-center">
@@ -154,7 +154,7 @@ const Header = () => {
               smooth={true}
               duration={300}
               className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase"
-              activeClass="!text-blue-500 dark:!text-blue-400"
+              activeClass="!text-blue-500 dark:!text-blue-400 cursor-pointer"
               onClick={() => setShowNavbar(false)}
             >
               Home
@@ -167,8 +167,8 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={300}
-              className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase"
-              activeClass="!text-blue-500 dark:!text-blue-400"
+              className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase cursor-pointer"
+              activeClass="!text-blue-500 dark:!text-blue-400 cursor-pointer"
               onClick={() => setShowNavbar(false)}
             >
               About
@@ -181,8 +181,8 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={300}
-              className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase"
-              activeClass="!text-blue-500 dark:!text-blue-400"
+              className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase cursor-pointer"
+              activeClass="!text-blue-500 dark:!text-blue-400 cursor-pointer"
               onClick={() => setShowNavbar(false)}
             >
               Projects
@@ -195,7 +195,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={300}
-              className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase"
+              className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase cursor-pointer"
               activeClass="!text-blue-500 dark:!text-blue-400"
               onClick={() => setShowNavbar(false)}
             >
@@ -209,7 +209,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={300}
-              className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase"
+              className="text-text-primary dark:text-dark-text-primary font-roboto font-semibold uppercase cursor-pointer"
               activeClass="!text-blue-500 dark:!text-blue-400"
               onClick={() => setShowNavbar(false)}
             >
